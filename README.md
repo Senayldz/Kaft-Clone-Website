@@ -9,7 +9,7 @@ KAFT, tasarım odaklı bir e-ticaret platformudur. Amacımız, kullanıcıların
 
 **Grup adı:** Kaft Grup
 
-**Proje Ekibi:** Engin Gül, İrem Maydan, İsa Ulutepe, Sena Yıldız
+**Proje Ekibi:** Engin Gül, İrem Maydan, Sena Yıldız
 
 1. [Proje Planı](Proje-Planı.md)
 2. [Gereksinim Analizi](gereksinim-analizi.md)
@@ -18,5 +18,4 @@ KAFT, tasarım odaklı bir e-ticaret platformudur. Amacımız, kullanıcıların
 5. [Veritabanı Diyagramı](Veritabanı-Diyagramı.md)
 6. [Front-End](Front-End.md)
 7. [Back-End](Back-End.md)
-8. Test
-9. [Geliştirici Ve Kullanıcı Dökümantasyonları](Geliştirici-ve-Kullanıcı-Dokümantasyonları.md)
+8. [Geliştirici Ve Kullanıcı Dökümantasyonları](Geliştirici-ve-Kullanıcı-Dokümantasyonları.md)
