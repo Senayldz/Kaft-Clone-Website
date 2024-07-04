@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Font1';
+    src: url("../Fonts/rumeur.otf") format('truetype');
+}
+
+/* Köşeli yazı fontu */
+@font-face {
+    font-family: 'Font2';
+    src: url("../Fonts/basier-circle-medium.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Font3';
+    src: url("../Fonts/basier-circle-regular.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Font4';
+    src: url("../Fonts/basier-circle-regular-italic.otf") format('truetype');
+}
+
+

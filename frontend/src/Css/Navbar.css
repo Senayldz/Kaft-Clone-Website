@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 1;
+    overflow-y: auto; /* Dikey kaydırma çubuğunu aktif hale getir */
+}
+
+
+
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 16px px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nav-menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar-toggle {
+    background: none;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-menu-items#column-1 {
+    text-align: center;
+    background-color: white;
+    width: 300px;
+}
+
+.nav-menu-items#column-2 {
+    background-color: #E7BD29;
+    width: 400px;
+
+}
+
+.nav-menu-items#column-3 {
+    background: linear-gradient(to bottom, #353533 57%, #D3CDBF 43%);
+    width: 450px;
+}
+
+.nav-menu-items#column-4 {
+    background-color: white;
+    width: 300px;
+}
+
+#column-1 h1 {
+    color: #353533;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#column-2 h1,
+#column-3 h1,
+#column-4 h1 {
+    color: #353533;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.nav-text-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    text-decoration: none;
+    color: inherit;
+    /* Opsiyonel: Metnin mevcut rengini korur */
+    cursor: none;
+    /* Opsiyonel: Fare işaretçisini varsayılan yapar */
+    list-style: none;
+}
+
+.modal-dialog {
+    padding: 8px;
+    background-color: white;
+    position: fixed;
+    overflow-y: hidden;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: -916px;
+    height: 100vh;
+    width: 900px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal-dialog.show {
+    right: 0px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+
+.modal-content  h2, .modal-content p{
+    margin: 2rem 2rem;
+    color: #353533;
+}
+
+
+.dropdown label {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    margin-left: 1rem;
+    color: #353533;
+    display: block;
+
+}
+
+.dropdown {
+    margin-bottom: 20px;
+    padding-bottom: 2rem;
+}
+
+
+.dropdown select {
+    width: 90%;
+    align-items: center;
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.mybutton {
+    margin-top: 2rem;
+    align-items: center;
+    background-color: #F2F3EE;
+    color: black;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+.not-update-btn {
+    background-color: #F2F3EE;
+    color: black;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+.close span::before {
+    content: '×';
+    color: black;
+    font-size: 50px;
+}
+
+.white-text-surdurebilirlik{
+    cursor: auto;
+}
+
+/*responsive*/
+@media screen and (max-width: 1400px) {
+    .nav-menu {
+        flex-direction: column;
+        width: 33%; /* Küçük ekranlarda tam genişlikte olmasını sağla */
+    }
+    .nav-menu-items#column-3 {
+        background: linear-gradient(to bottom, #353533 70%, #D3CDBF 30%);
+        width: 450px;
+    }
+    .nav-menu-items#column-2 {
+        background-color: #E7BD29;
+        width: 420px;
+    
+    }
+    .text-center button{
+        margin-left: 25px;
+    }
+    #column-1 h1 {
+        color: #353533;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    #column-2 h1,
+    #column-3 h1,
+    #column-4 h1 {
+        color: #353533;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .white-text-surdurebilirlik {
+        color: white;
+        text-align: left;
+        margin-left: 1rem;
+      }
+      
+}
+/* main.css veya Navbar.css dosyasına ekleyin */
+
+.menucontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menuitem.search {
+    position: absolute;
+    right: 200px; /* Sağdaki login butonundan 50px solda */
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 25px; /* Köşeleri yuvarladık */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge ekledik */
+    transition: all 0.3s ease; /* Geçiş animasyonu ekledik */
+    outline: none; /* Modern görünüm için outline'ı kaldırdık */
+}
+
+.search-input:focus {
+    border-color: #007bff; /* Odaklanma durumu için kenarlık rengi */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Odaklanma durumu için gölge */
+}
+
+.search-results-container {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    width: 100%;
+    max-width: 300px;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: black;
+}
+
+.search-results {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.search-item .content {
+    display: flex;
+    flex-direction: column;
+}
+.search-item .content h4 {
+    color: black; /* Bu satırı ekleyin */
+    margin: 0;
+    font-size: 14px; /* Yazı boyutunu isteğinize göre ayarlayabilirsiniz */
+}
+
+.search-item .content p {
+    margin: 0;
+    font-size: 12px; /* Yazı boyutunu isteğinize göre ayarlayabilirsiniz */
+    color: grey; /* İsteğinize göre bu rengi de değiştirebilirsiniz */
+}
+

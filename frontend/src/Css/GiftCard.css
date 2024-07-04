@@ -1,0 +1,105 @@
+.login-button-giftcard {
+  display: inline-block;
+  width: 500px;
+  padding: 19px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(59, 56, 56);
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  width: 500px;
+  height: 40px;
+}
+
+.im-active-modal {
+  overflow-y: hidden;
+}
+
+.im-btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.im-modal,
+.im-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.im-overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.im-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 3px;
+  width: 80vw;
+  height: 80vh;
+  max-width: 800px;
+  max-height: 485px;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.imclose {
+  color: black;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.imclose:hover,
+.imclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.giftcard-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group span {
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.giftcard-info {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}

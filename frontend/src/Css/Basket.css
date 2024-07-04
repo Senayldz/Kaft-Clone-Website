@@ -1,0 +1,65 @@
+.basket-table-container {
+  margin: 20px auto;
+  width: 90%;
+  overflow-x: auto;
+}
+
+.basket-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.basket-thead {
+  background-color: #f4f4f4;
+}
+
+.basket-th,
+.basket-td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.basket-th {
+  background-color: #555;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.basket-tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.basket-tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.basket-h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.basket-img {
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.basket-img:hover {
+  transform: scale(1.1);
+}
+
+/*butonlar*/
+.basket-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: #4AD8C1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+

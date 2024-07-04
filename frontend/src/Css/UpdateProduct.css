@@ -1,0 +1,54 @@
+body{
+  background-color: #E6E7DF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the container takes up the full height of the viewport */
+    margin-top: 5rem;
+  }
+  
+  .form-container {
+    width: 800px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="number"],
+  .form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Set input background color to white */
+  }
+  
+  .form-container textarea {
+    height: 100px; /* Adjust textarea height as needed */
+  }
+  
+  .dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative; /* Ensure relative positioning for absolute positioning of label */
+  }
+  
+  .dropzone p {
+    margin-bottom: 10px;
+  }
+  
+  .dropzone label {
+    position: absolute;
+    bottom: 5px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: #007bff; /* Adjust color as needed */
+  }
+  

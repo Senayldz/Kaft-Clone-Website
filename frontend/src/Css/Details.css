@@ -1,0 +1,142 @@
+
+.product-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F2F3EF;
+    flex-direction: row;
+    /* Yazıları ve resmi yan yana getirir */
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.details {
+    display: flex;
+    /* Yazıları ve resmi yan yana getirir */
+    gap: 5rem;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 700px; 
+    width: 600px; 
+    background-color: white;
+    text-align: center;
+}
+
+
+.info-container h1 {
+    /* diğer stil özellikleri */
+    margin-bottom: 0.5rem; /* Bu değeri ayarlayın */
+    line-height: 1.2; /* Bu değeri ayarlayın */
+}
+
+.description {
+    /* diğer stil özellikleri */
+    margin-top: 0.5rem; /* Bu değeri ayarlayın */
+    line-height: 1.2; /* Bu değeri ayarlayın */
+}
+
+
+.price-and-cart {
+    display: flex; /* Fiyatı ve "Sepete Ekle" butonunu yan yana getirir */
+    align-items: center; /* Fiyatı ve "Sepete Ekle" butonunu dikey olarak merkeze hizalar */
+    justify-content: space-between; /* Fiyat ve "Sepete Ekle" butonu arasında boşluk oluşturur */
+    background-color: white; /* Arka planı beyaz yapar */
+    padding-top: 1px; /* İçerik etrafında boşluk oluşturur */
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+.price-and-cart p {
+    font-size: 20px;
+    background-color:#E6E7DF ;
+    width: 210px;
+    height: 50px; /* Fiyatın yüksekliğini artırır */
+    line-height: 50px; /* Fiyat metnini dikey olarak merkeze hizalar */
+}
+
+.add-to-cart-btn {
+    padding: 2px;
+    width: 400px;
+    height: 50px; /* Butonun yüksekliğini artırır */
+    background-color: #4AD8C1;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px; /* Buton metnini dikey olarak merkeze hizalar */
+    margin-bottom: 0px;
+}
+
+
+.sizes {
+    display: flex;
+    gap: 1rem;
+    margin-left: 4rem;
+}
+
+.sizes span {
+    color: #666;
+    /* Bedenlerin rengini siyah yapar */
+    font-size: 1.2rem;
+    /* Bedenlerin boyutunu büyütür */
+}
+
+.outer-circle {
+    height: 59px;
+    width: 59px;
+    border: 2px solid #F9C5AD; /* Dış dairenin çerçevesini belirler */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent; /* Dış dairenin içini boş yapar */
+    margin-left: 60px;
+}
+
+.inner-circle {
+    height: 45px;
+    width: 45px;
+    background-color: #F9C5AD; /* İç dairenin içini dolu yapar */
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.label {
+    font-size: 1.2rem; /* Yazı boyutunu ayarlar */
+    color: #666; /* Yazı rengini ayarlar */
+    margin-left: 4rem;
+    text-align: left;
+}
+
+
+/*collapsible menu*/
+.collapsible .content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible .active + .content {
+  max-height: 100vh; /* Maksimum yüksekliği ayarlayın */
+}
+

@@ -1,0 +1,317 @@
+.login-modal {
+    background-color: white;
+    /* Arka planı grileştir */
+    border: 1px solid #ccc;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 47%;
+    height: 100%;
+
+}
+
+.login-modal-content-wrapper {
+    display: grid;
+    grid-template-rows: auto;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.login-modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 650PX;
+    background-color: #fff;
+    border-radius: 0px;
+    padding-left: 30px;
+
+}
+
+/* Kapat düğmesi için stiller */
+.close {
+    color: black;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 0px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: #ddd;
+  width: calc(100%-280px);
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+input[type="text"] {
+  background-color: #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+
+.şifreyiunuttum {
+
+    text-decoration: underline;
+    float: right;
+    color: black !important;
+    margin-left: 450px;
+
+}
+
+.square-button {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.square-button button,
+.square-button a {
+    padding: 20px 45px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(59, 56, 56);
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+
+
+.square-button button:hover,
+.square-button a:hover {
+    background-color: rgb(59, 56, 56);
+}
+
+.square-button:nth-child(2) button,
+.square-button:nth-child(2) a {
+    background-color: #ccc;
+    color: rgb(59, 56, 56);
+}
+
+.labelgiriş {
+    font-family: 'Font1';
+    color: black;
+    float: left;
+    margin-right: 580px;
+
+}
+
+.irememberLabel {
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    margin-top:-32px;
+    margin-right: 500px;
+
+}
+
+.irememberMe {
+    margin-right: 610px;
+}
+
+.girişyapbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: rgb(59, 56, 56);
+    text-decoration: none;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+}
+
+
+/* Giriş yap */
+
+.rememberMe2{
+    margin-right: 610px;
+}
+.rememberMe1{
+    margin-right: 610px;
+}
+.rememberLabel1{
+margin-top: -22px;
+float: left;
+margin-left: 12px;
+}
+.img-figure {
+
+    float: right;
+    margin-left: 50px;
+}
+
+.imgyazi {
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    width: auto;
+    height: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cccccc;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+.item:first-child {
+    flex: 60;
+    margin-left: 150px;
+    padding: 70px;
+}
+
+.item:last-child {
+    flex: 40;
+    margin-right: 150px;
+    padding: 70px;
+}
+
+/* Giriş yap */
+
+input[type="adın"],
+input[type="soyad"],
+input[type="posta"],
+input[type="şifre"] {
+    background-color: #ddd;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+
+}
+
+.login-button {
+    display: inline-block;
+    padding: 19px 250px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(59, 56, 56);
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+
+}
+
+.login-button:hover {
+    background-color: #333;
+}
+
+
+
+
+
+/*giriş */
+
+
+/* üyelik formu */
+
+.kutu {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Giriş yap kutusu stilleri */
+/*üye ol fecebok ile giriş google ile giriş */
+
+
+
+/* Metin etiketlerinin stil tanımı */
+
+
+
+
+.kaftaüyeol {
+    background-color: rgb(59, 56, 56);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+
+
+
+.Hoşgeldin {
+    text-align: center;
+    font-size: 6em;
+}
+
+
+
+.üyeliğimvar {
+    display: inline-block;
+    float: right;
+    margin-top: -25px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.girişyaplogo {
+    text-align: center;
+}
+
+.üyeolunduğunda {
+    text-align: center;
+}
+
+
+
+.navbarmenu {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.navbargiris {
+    font-family: 'Font2';
+}
+
+.giriş-yazı {
+    float: left;
+}

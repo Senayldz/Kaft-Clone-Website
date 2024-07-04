@@ -1,0 +1,17 @@
+# Visual Studio user-specific files
+*.suo
+
+# Markdown files
+*.md
+
+# Node.js modules
+/frontend/node_modules
+# Pack files
+*.pack
+
+
+*.pdf
+
+*.docx
+
+node_modules

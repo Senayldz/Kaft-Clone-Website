@@ -1,0 +1,37 @@
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #282c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Solarak kaybolma animasyonu */
+  }
+  
+  .splash-logo {
+    width: auto; /* İhtiyaca göre boyutunu artırın */
+    height: auto;
+    margin-bottom: 20px; /* Logo ile yazı arasındaki boşluk */
+  }
+  
+  .splash-screen h1 {
+    font-size: 4rem; /* Başlığın boyutunu ayarlayın */
+    margin: 10px 0;  /* Üst ve alt boşluk */
+  }
+  
+  .splash-screen p {
+    font-size: 1.5rem; /* Alt metnin boyutunu ayarlayın */
+  }
+  
+  .splash-screen.fade-out {
+    opacity: 0; /* Opaklığı sıfıra ayarlayarak kaybolmasını sağlıyoruz */
+  }
+  

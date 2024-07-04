@@ -1,0 +1,442 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    font-family: 'Font1', Arial, sans-serif;
+    scrollbar-width: none;
+    /* Firefox için */
+    -ms-overflow-style: none;
+    /* Internet Explorer için */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari ve Chrome için */
+}
+
+/* Header alanının css düzenleme kodları */
+#header {
+    position: fixed;
+    height: 50px;
+    display: block;
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 40px 0 0 0;
+}
+
+.menucontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menuitem {
+    text-align: center;
+    display: flex;
+}
+
+.menucontainer a {
+    text-decoration: none;
+    color: white;
+}
+
+.menutext {
+    margin-left: 10px;
+}
+
+.logo {
+    content: "";
+    display: inline-block;
+    background-size: cover;
+
+}
+
+.logo img {
+    width: 36px;
+    height: 40px;
+}
+
+.login {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.basket {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+/* Buraya kadar olan kısım header kısmını oluşturan kodlar.
+bundan sonrası diğer alanlar, ağaıda hepsinin neler 
+oldugunu belirttim. */
+
+
+/* Yüzeyler üzerinde bir karartma var 
+bunu aşağıdaki alan sağlıyor (cover) sitede nasıl
+yaptılar bilmiyorum ben böyle yaptım :) */
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+}
+
+/* Her sayfada sağ altta bulunan yazılar
+için kullandığım css alanları belirttiğim
+yeree kadar devvam ediyor. */
+
+.my-section {
+    position: relative;
+    bottom: 0;
+}
+
+.caption-container {
+    position: absolute;
+    bottom: 10vh;
+    right: 15vh;
+    z-index: 1000;
+    opacity: 0.6;
+    color: white;
+    font-family: 'Font1', Arial, sans-serif;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.caption small {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.caption h4 {
+    margin: 0 0 0 7.5px;
+    font-size: 60px;
+}
+
+/* Burada bitiyor ve sonrasındaki kodlar başlıyor
+*/
+
+
+/* Arkaplanların genel kontrol alanı bg */
+.bg {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Görünen ilk background */
+.s1 {
+
+    background-size: cover;
+    background-image: url("../../src/images/669.jpg");
+
+}
+
+/* Görünen ikinci background */
+
+.s2 {
+    background-size: cover;
+    background-image: url("../../src/images/670_2.jpg");
+}
+
+/* Görünen üçüncü background */
+
+.s3 {
+    background-size: cover;
+    background-image: url("../../src/images/667.jpg");
+}
+
+/* Görünen dördüncü background */
+
+.s4 {
+    position: relative;
+}
+
+/* Dördüncü backgroun alanında bir video var, burası video için*/
+
+.s4 .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Videoyu kapsayan alanı kaplayacak şekilde ayarlar */
+}
+
+/* Görünen beeşinci background */
+
+.s5 {
+    background-size: cover;
+    background-image: url("../../src/images/665.jpg");
+}
+
+/* Görünen altıncı background */
+
+.s6 {
+    background-size: cover;
+    background-image: url("../../src/images/662.jpg");
+}
+
+/* Görünen yedinci background */
+
+.s7 {
+    background-size: cover;
+    background-image: url("../../src/images/659_1.jpg");
+}
+
+/* Görünen seekizinci background */
+
+.s8 {
+    background-size: cover;
+    background-image: url("../../src/images/658_0.jpg");
+}
+
+/* Görünen dokuzuncu background */
+
+.s9 {
+    background-color: #ddd;
+    background-size: cover;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* S9 alanı kayan slider bulunmakta burdan aiaıda belirttiğim yere kadar slider alanına 
+ait kodlar bulunmakta */
+.headertextS9 h2 {
+    color: #353532;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    padding: 5px 10px;
+    font-family: 'Font3', Arial, sans-serif;
+}
+
+
+.mySwiper {
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+}
+
+/* Görünen resmin kaynolma animasyonu için  */
+.mySwiper img {
+    transition: opacity 0.5s linear;
+    opacity: 1;
+}
+
+/* Kayan her resmin görünür hale gelmesi için */
+.mySwiper .swiper-slide-prev img {
+    opacity: 0;
+}
+
+.mySwiper .swiper-slide-next img {
+    opacity: 0;
+}
+
+/* kayan slide alanını belirleyen container */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Her bir slide nesnesi */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* resimlerin arasındaki çizgi */
+.swiper-slide hr {
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+/* Slidelar içindeki textlerin özellikleri */
+.swiper-slide .sliderText {
+    color: black;
+    position: absolute;
+    bottom: 160px;
+    left: 210px;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-family: 'Font2', Arial, sans-serif;
+
+}
+
+
+
+
+/* Buraya kadar S9 alnındaki slideer yapısına ait kodlardı */
+
+/* Görünen onuncu background */
+/* yanyan 4 resim ve üzeride yazıların bulundugu 
+alan aşağıda belirttiğim yere kadar
+olan kodlar s10 alanına ait */
+.s10 {
+    position: relative;
+}
+
+.containers1 {
+    display: flex;
+}
+
+.box {
+    /* İçerideeki textleerin her kutuda kendi içine gçre hizalnamsı için
+    relatıve verdim */
+    position: relative;
+    flex: 1;
+    box-sizing: border-box;
+    height: 100vh;
+    background-position: center;
+    justify-content: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.b1 {
+    background-image: url("../../src/images/block_gift_card.jpg");
+}
+
+.b2 {
+    background-image: url("../../src/images/block_tema.jpg");
+}
+
+.b3 {
+    background-image: url("../../src/images/block_tee_machine.jpg");
+}
+
+.b4 {
+    background-image: url("../../src/images/block_sustainability.jpg");
+}
+
+/* Kutular içindeki Textlerin düzenlenmesi  */
+.myText {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+}
+
+.myText p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.myText h4 {
+    font-size: 1.375rem;
+    text-transform: uppercase;
+}
+
+/* Buraya kdar olan kodlar s10 alanına ait
+burdan sonrası s11*/
+
+
+/* Buradan itibbaren s11 alanınının düzenlemeleri
+başlıyor belirrtiğim yerde son buluyor. */
+.s11 {
+    background-color: #d9dbcf;
+}
+
+/* S11 alanında bulunan başlıkların düzenlenmesi */
+.headertextS11 {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: 'Font2';
+}
+
+.headertextS11 h2 {
+    margin-top: 0;
+}
+
+/* Ülke ve dil değiştrime alanı */
+.change {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Font2';
+
+}
+
+.vertical-line {
+    margin: 0 10px;
+}
+
+/* sitenin sonunda yer alan tablo
+Belki tablo değildir ama bana tablo yapmak mantıklı geldi */
+.tableBox {
+    margin: 0 auto;
+    /* Tabloyu ortala */
+    margin-top: 50px;
+    /* Türkiye | Türkçe yazısının altına al */
+    width: 70%;
+    /* Tablo genişliği */
+}
+
+.socialMediaIcons {
+    z-index: 100000;
+}
+
+table {
+    width: 100%;
+    /* Tablo genişliği */
+    border-collapse: collapse;
+    font-family: 'Font2';
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -2px;
+    /* Alt çizginin yüksekliği */
+    background-color: black;
+    /* Alt çizgi rengi */
+    height: 1px;
+    /* Alt çizgi kalınlığı */
+    transition: right 0.3s;
+    /* Geçiş efekti */
+}
+
+a:hover::after {
+    right: 0;
+}
+
+/* S11 alanının kodlaması burada bitiyor */

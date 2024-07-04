@@ -1,0 +1,66 @@
+.accordion-parent {
+    width: 80%;
+    border-radius: 3px;
+    background-color: #f7f7f7; /* Arka plan rengi açık griye çevrildi */
+    padding: 10px; /* İç boşluk eklendi */
+    margin: 0 auto; /* Dış boşluk eklendi */
+    margin-bottom: 2rem;
+}
+
+.accordion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion .toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: #333; /* Yazı rengi koyulaştırıldı */
+    font-weight: 600;
+    border: none;
+    background-color: #f7f7f7; /* Arka plan rengi beyaza çevrildi */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Renk değişim animasyonu eklendi */
+}
+
+.accordion:first-child .toggle {
+    border-radius: 3px 3px 0 0; /* İlk accordion için üst köşeler yuvarlatıldı */
+}
+
+.accordion:last-child .toggle {
+    border-radius: 0 0 3px 3px; /* Son accordion için alt köşeler yuvarlatıldı */
+    border-bottom: none; /* Son accordion için alt kenarlık kaldırıldı */
+}
+
+.accordion .toggle .direction-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-weight: 600;
+}
+
+.accordion .content-parent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+    color: #333; /* İçerik yazı rengi koyulaştırıldı */
+}
+
+.accordion.toggled .content-parent {
+    text-align: left;
+    margin-top: 0;
+    max-height: 500px; /* İçerik maksimum yüksekliği ayarlandı */
+    transition: max-height 0.25s ease-in;
+}
+
+.accordion .content {
+    text-align: left;
+    padding: 0px 15px 15px;
+    background-color: #f7f7f7; /* İçerik arka plan rengi beyaza çevrildi */
+}

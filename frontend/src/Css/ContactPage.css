@@ -1,0 +1,68 @@
+/* ContactPage.css */
+
+/* Navbar style */
+.Navbar {
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  position: relative; /* Gerekirse, içerideki metnin konumunu ayarlamak için */
+}
+
+.Navbar::after {
+  content: "Ücretsiz ve hızlı kargo + koşulsuz ve 365 gün değişim / iade garantisi";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px; /* Gerekirse, boyutu ayarlayın */
+  color: #fff; /* Gerekirse, rengi ayarlayın */
+}
+
+body {
+  background-color: #868683;
+}
+
+/* Contact form style */
+.contact-page-content {
+  margin: 25vh 25vw; /* Top, right, and left margins */
+  margin-top: 200px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+form textarea {
+  height: 75px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Yatayda ortalamak için */
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

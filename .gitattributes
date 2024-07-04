@@ -1,0 +1,11 @@
+# Auto detect text files and normalize line endings
+* text=auto
+
+# Windows specific files
+*.bat text eol=crlf
+
+# Unix specific files
+*.sh text eol=lf
+
+# Markdown files
+*.md text eol=lf

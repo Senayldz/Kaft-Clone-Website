@@ -1,0 +1,100 @@
+body {
+  background-color: #F2F3EF;
+}
+
+.content-container {
+  padding-top: 80px; /* Navbar ile içerik arasında daha fazla boşluk bırak */
+}
+
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Kartlar arasında boşluk bırak */
+  justify-content: center; /* Kartları ortala */
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.card:hover {
+  transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card .content {
+  padding: 15px;
+  transform: translateZ(50px);
+}
+
+.card .content h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.card .content p {
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.card .content span {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.normal-price {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-top: 10px;
+}
+
+.discounted-price {
+  font-size: 2.5rem;
+  color: #d9534f; /* Kırmızı renk */
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  animation: blink-animation 0.5s infinite alternate; /* Yanıp sönen animasyon */
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.top-text {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+}
+
