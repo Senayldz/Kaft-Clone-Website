@@ -11,7 +11,7 @@ KAFT, tasarım odaklı bir e-ticaret platformudur. Amacımız, kullanıcıların
 
 **Proje Ekibi:** Engin Gül, İrem Maydan, Sena Yıldız
 
-1. [Proje Planı](Proje-Planı.md)
+1. [Proje Planı](Project_Plan.md)
 2. [Gereksinim Analizi](gereksinim-analizi.md)
 3. [Durum Diyagramı](Durum-Diyagramı.md)
 4. [Durum Senaryoları](Durum-Senaryoları.md)
