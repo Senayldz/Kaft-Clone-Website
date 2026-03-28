@@ -10,7 +10,7 @@ services:
 
     - type: web
     name: frontend
-        runtime: static
+    runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
 
